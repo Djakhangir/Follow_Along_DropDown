@@ -10,8 +10,8 @@ const nav = document.querySelector('.top');
 function handleEnter(){
     this.classList.add('trigger-enter');
     setTimeout(() => this.classList.add('trigger-enter-active'), 150);
-//It is better to use the arrow function because this keyword will inherit and point the origin class when we youse the reg
-// function it will throw the error saying cannot read prop add-meaning cannot add that class to the class;
+//It is better to use the arrow function because this keyword will inherit and point the origin class when we use the reg
+// function declaration it will throw the error saying cannot read prop add-meaning cannot add that class to the class;
 }
 
 function handleLeave(){
