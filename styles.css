@@ -83,15 +83,14 @@ transition and in our js handleEnter function we set the time, this is the way t
 .trigger-enter-active .dropdown {
     opacity: 1;
 }
-/* 
 .dropDownBg {
     width: 100px;
     height: 100px;
     position: absolute;
-    background: #fff;
+    background: rgb(132, 182, 184);
     border-radius: 4px;
-    box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
-    transition: all 0.3s, opacity 0.1s, transform 0.2s;
+    box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.5);
+    transition: all 0.5s, opacity 0.1s, translate 0.2s;
     transform-origin: 50% 0;
     display: flex;
     justify-content: center;
@@ -107,11 +106,11 @@ transition and in our js handleEnter function we set the time, this is the way t
     width: 20px;
     height: 20px;
     display: block;
-    background: white;
+    background: rgba(132, 182, 184, 0.966);
     transform: translateY(-50%) rotate(45deg);
 }
 
-.bio {
+.biography {
     min-width: 500px;
     display: flex;
     justify-content: center;
@@ -119,20 +118,22 @@ transition and in our js handleEnter function we set the time, this is the way t
     line-height: 1.7;
 }
 
-.bio img {
+.biography img {
     float: left;
     margin-right: 20px;
+    width:20%
 }
 
-.courses {
+.categories {
     min-width: 300px;
 }
 
-.courses li {
+.categories li {
     padding: 10px 0;
     display: block;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
+
 
 .dropdown a {
     text-decoration: none;
@@ -145,9 +146,10 @@ a.button {
     padding: 10px;
     color: white;
     margin-bottom: 10px;
-} */
+}
 
 /* Matches Twitter, TWITTER, twitter, tWitter, TWiTTeR... */
   .button[href*=twitter] { background: #019FE9; }
   .button[href*=facebook] { background: #3B5998; }
-  .button[href*=courses] { background: #ffc600; }
+  .button[href*=roadmap] { background: #ffc600; }
+  .button[href*=youtube] { background: #d45252; }
