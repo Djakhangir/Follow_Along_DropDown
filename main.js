@@ -13,7 +13,6 @@ const nav = document.querySelector('.top');
 
 function handleEnter(){
     this.classList.add('trigger-enter');
-<<<<<<< HEAD
     setTimeout(() => {
         if(this.classList.contains('trigger-enter')){
         this.classList.add('trigger-enter-active');
@@ -24,12 +23,6 @@ function handleEnter(){
 
 //Adding the white bg;
 bg.classList.add('open');
-=======
-    setTimeout(() => this.classList.add('trigger-enter-active'), 150);
-//It is better to use the arrow function because this keyword will inherit and point the origin class when we use the reg
-// function declaration it will throw the error saying cannot read prop add-meaning cannot add that class to the class;
-}
->>>>>>> cd4299920bf0074c3d01bcdf20588377fea0ece3
 
 const dropdown = this.querySelector('.dropdown'); // getting the dropdown class;
 const dropdownCoords = dropdown.getBoundingClientRect();    // getting the coordinates of dropdown classes to allocate the 
